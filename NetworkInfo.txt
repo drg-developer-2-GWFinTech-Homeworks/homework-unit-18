@@ -47,13 +47,11 @@ geth init networkunit18homework.json --datadir node2
 
 #### Start
 
-geth --datadir node1 --mine --minerthreads 1
-geth --datadir node1 --unlock "SEALER_ONE_ADDRESS" --mine --minerthreads 1
-
-geth --datadir node2                               --port 30304 --rpc --bootnodes "enode://<replace with node1 enode address>" --ipcdisable
-geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --port 30304 --rpc --bootnodes "SEALER_ONE_ENODE_ADDRESS" --ipcdisable --allow-insecure-unlock   
+geth --datadir node1 --unlock "0xe1D930Ee27F051a7061AAf3fdaDE09329F5c7C30" --mine --minerthreads 1
+geth --datadir node2 --unlock "0x6BFf3Ac450C3A3F9166903CcEDE11F8897BfdB9A" --port 30304 --rpc --bootnodes "enode://e0b99f96042dc91213bacd68ee91e9862d12dadab8b85a7ebd5078e0da0b402b4beb70e31d65bcfbc0aa7c67326cf0a5f9703b12c270697d3b9ead39c1418e17@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock   
 
 
+enode://e0b99f96042dc91213bacd68ee91e9862d12dadab8b85a7ebd5078e0da0b402b4beb70e31d65bcfbc0aa7c67326cf0a5f9703b12c270697d3b9ead39c1418e17@127.0.0.1:30303
 
 
 
@@ -63,5 +61,10 @@ geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --port 30304 --rpc --bootnode
 
 
 
+# Ask:
+
+1. Is "Looking for peers" runtime message ok or not?
+2. How to connect to custom network?
+3. How to fund accounts?
 
 
